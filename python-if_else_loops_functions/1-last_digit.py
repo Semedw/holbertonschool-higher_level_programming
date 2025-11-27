@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
+number = abs(number)
 k = number % 10
 if k < 6 and k != 0:
     print(f"Last digit of {number} is {k} and is less than 6 and not 0")
