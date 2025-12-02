@@ -20,4 +20,4 @@ def roman_to_int(roman_string):
                 l[i] = -l[i]
         return sum(l)
     except TypeError:
-        return None
+        return 0
