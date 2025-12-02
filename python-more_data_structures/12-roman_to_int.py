@@ -10,11 +10,14 @@ numerals = {
 }
 
 def roman_to_int(roman_string):
-    s = 0
-    l = []
-    for i in roman_string:
-        l.append(numerals[i])
-    for i in range(len(l)-1):
-        if l[i] < l[i+1]:
-            l[i] = -l[i]
-    return sum(l)
+    try:
+        s = 0
+        l = []
+        for i in roman_string:
+            l.append(numerals[i])
+        for i in range(len(l)-1):
+            if l[i] < l[i+1]:
+                l[i] = -l[i]
+        return sum(l)
+    except TypeError:
+        return None
