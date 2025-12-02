@@ -19,4 +19,3 @@ def add_tuple(a, b):
         new_list.append(a[i] + b[i])
 
     return tuple(new_list)
-    
