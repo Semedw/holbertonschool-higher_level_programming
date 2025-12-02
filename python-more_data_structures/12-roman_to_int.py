@@ -14,10 +14,10 @@ def roman_to_int(roman_string):
         s = 0
         value_list = []
         for i in roman_string:
-            l.append(numerals[i])
-        for i in range(len(l)-1):
-            if l[i] < l[i+1]:
-                l[i] = -l[i]
-        return sum(l)
+            value_list.append(numerals[i])
+        for i in range(len(value_list)-1):
+            if value_list[i] < value_list[i+1]:
+                value_list[i] = -value_list[i]
+        return sum(value_list)
     except TypeError:
         return 0
