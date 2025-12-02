@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 def best_score(a_dict):
-    if len(a_dict) == 0:
+    if a_dict == None:
         return None
     result = []
     name = []
