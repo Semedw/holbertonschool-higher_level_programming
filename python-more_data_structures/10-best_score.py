@@ -2,6 +2,12 @@
 
 def best_score(a_dict):
     result = []
-    for value in a_dict.values():
+    name = []
+    for key, value in a_dict.items():
         result.append(value)
-    return max(result) if len(result) > 0 else None
+        name.append(key)
+    if len(result) == 0:
+        return None
+    else:
+        k = result.index(max(result))
+        return name[k]
