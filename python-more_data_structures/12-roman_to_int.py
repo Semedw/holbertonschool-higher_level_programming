@@ -12,7 +12,7 @@ numerals = {
 def roman_to_int(roman_string):
     try:
         s = 0
-        l = []
+        value_list = []
         for i in roman_string:
             l.append(numerals[i])
         for i in range(len(l)-1):
