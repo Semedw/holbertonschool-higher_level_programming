@@ -1,9 +1,3 @@
 #!/usr/bin/python3
 def square_matrix_map(matrix=[]):
-    new_matrix = []
-    for i in matrix:
-        new_list = []
-        for j in i:
-            new_list.append(j**2)
-        new_matrix.append(new_list)
-    return new_matrix
+    return list(map(lambda x: list(map(lambda y: y**2, x)), matrix))
