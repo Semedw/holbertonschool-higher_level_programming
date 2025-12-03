@@ -17,10 +17,10 @@ if __name__ == '__main__':
             print('Unknown operator. Available operators: +, -, * and /')
             exit(1)
         if argv[1] == '+':
-            print(f'{argv[0]} + {argv[0]} =', add(int(argv[0]), int(argv[2])))
+            print(f'{argv[0]} + {argv[2]} =', add(int(argv[0]), int(argv[2])))
         if argv[1] == '-':
-            print(f'{argv[0]} - {argv[0]} =', sub(int(argv[0]), int(argv[2])))
+            print(f'{argv[0]} - {argv[2]} =', sub(int(argv[0]), int(argv[2])))
         if argv[1] == '*':
-            print(f'{argv[0]} * {argv[0]} =', mul(int(argv[0]), int(argv[2])))
+            print(f'{argv[0]} * {argv[2]} =', mul(int(argv[0]), int(argv[2])))
         if argv[1] == '/':
-            print(f'{argv[0]} / {argv[0]} =', div(int(argv[0]), int(argv[2])))
+            print(f'{argv[0]} / {argv[2]} =', div(int(argv[0]), int(argv[2])))
