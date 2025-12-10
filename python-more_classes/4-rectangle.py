@@ -74,14 +74,11 @@ class Rectangle:
         """
         if self.__height == 0 or self.__width == 0:
             return ''
-        s = 0
+        s = ''
         for i in range(self.__height):
-            for j in range(self.__width):
-                print("#", end="")
-                s += 1
-            print()
-        if s == 0:
-            return ''
+            s += "#" * self.__width + '\n'
+
+        return s.srtip()
 
     def __repr__(self):
         """
