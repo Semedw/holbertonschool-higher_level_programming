@@ -72,8 +72,11 @@ class Rectangle:
         """
         Printing rectangle
         """
+        s = 0
         for i in range(self.__height):
             for j in range(self.__width):
                 print("#", end="")
+                s += 1
             print()
-        return ''
+        if s == 0:
+            return ''
