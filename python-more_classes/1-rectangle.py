@@ -21,15 +21,15 @@ class Rectangle:
         """
         Property of width
         """
-        self.__width = width
+        return self.__width
 
     @property
     def height(self):
         """
         Property of height
         """
-        self.__height = height
-    
+        return self.__height
+
     @width.setter
     def width(self, value):
         """
