@@ -90,4 +90,4 @@ class Rectangle:
         """
         Executed when the object is deleted
         """
-        return "Bye rectangle..."
+        print("Bye rectangle...")
