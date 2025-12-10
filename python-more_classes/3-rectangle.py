@@ -72,6 +72,8 @@ class Rectangle:
         """
         Printing rectangle
         """
+        if self.__height == 0 or self.__width == 0:
+            return ''
         s = 0
         for i in range(self.__height):
             for j in range(self.__width):
