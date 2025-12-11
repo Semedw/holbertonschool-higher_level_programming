@@ -8,4 +8,4 @@ def inherits_from(obj, a_class):
     """
     Inside the function
     """
-    return isinstance(type(obj), a_class)
+    return issubclass(type(obj), a_class)
