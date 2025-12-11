@@ -79,7 +79,7 @@ class Rectangle:
             return ''
         s = ''
         for i in range(self.__height):
-            s += Rectangle.print_symbol * self.__width + '\n'
+            s += self.print_symbol * self.__width + '\n'
 
         return s.strip()
 
@@ -95,4 +95,3 @@ class Rectangle:
         """
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
-
