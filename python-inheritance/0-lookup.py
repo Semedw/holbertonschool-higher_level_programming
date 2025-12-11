@@ -6,4 +6,4 @@ def lookup(obj):
     """
     inside the lookup function
     """
-    return object.__dict__
+    return object.__getattrs__
