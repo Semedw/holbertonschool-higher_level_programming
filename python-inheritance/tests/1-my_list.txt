@@ -1,4 +1,56 @@
+Test present: check instantiation
 >>> from my_list import MyList
->>> m = MyList([3, 1, 2])
->>> m.print_sorted()
+>>> m = MyList()
+>>> isinstance(m, MyList)
+True
+
+Test present: check inherits from list
+>>> isinstance(m, list)
+True
+
+Test present: check __str__
+>>> str(MyList([3, 1, 2]))
+'[3, 1, 2]'
+
+Test present: check append()
+>>> m2 = MyList()
+>>> m2.append(10)
+>>> m2.append(5)
+>>> m2
+[10, 5]
+
+Test present: check print_sorted() with sorted append
+>>> m3 = MyList()
+>>> m3.append(1)
+>>> m3.append(2)
+>>> m3.append(3)
+>>> m3.print_sorted()
 [1, 2, 3]
+
+Test present: check print_sorted() with not sorted append
+>>> m4 = MyList()
+>>> m4.append(5)
+>>> m4.append(1)
+>>> m4.append(3)
+>>> m4.print_sorted()
+[1, 3, 5]
+
+Test present: check print_sorted() with negative numbers
+>>> m5 = MyList()
+>>> m5.append(-1)
+>>> m5.append(5)
+>>> m5.append(0)
+>>> m5.print_sorted()
+[-1, 0, 5]
+
+Test present: check print_sorted() with empty list
+>>> m6 = MyList()
+>>> m6.print_sorted()
+[]
+
+Test present: check print_sorted() returns a new list
+>>> m7 = MyList([3, 2, 1])
+>>> sorted_version = sorted(m7)
+>>> sorted_version
+[1, 2, 3]
+
