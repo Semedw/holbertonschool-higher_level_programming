@@ -20,7 +20,7 @@ class BaseGeometry:
         """
         raises an exeption
         """
-        return self.__width * self.__height
+        raise Exception('area() is not implemented')
 
     def integer_validator(self, name, value):
         """
