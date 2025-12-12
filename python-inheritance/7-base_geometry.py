@@ -9,13 +9,6 @@ class BaseGeometry:
     inside the base geometry class
     """
 
-    def __init__(self, width, height):
-        """
-        init function
-        """
-        self.__width = width
-        self.__height = height 
-
     def area(self):
         """
         raises an exeption
