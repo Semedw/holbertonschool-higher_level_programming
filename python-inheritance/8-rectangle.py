@@ -1,33 +1,18 @@
 #!/usr/bin/python3
 """
-empty class
+rectangle file
 """
 
+from 7-base_geometry import BaseGeometry
 
-class BaseGeometry:
+class Rectangle(BaseGeometry):
     """
-    inside the base geometry class
+    inheriting from basegeometry class
     """
 
     def __init__(self, width, height):
         """
-        initializing class
+        inside the init method
         """
         self.__width = width
         self.__height = height
-
-    def area(self):
-        """
-        raises an exeption
-        """
-        raise Exception('area() is not implemented')
-
-    def integer_validator(self, name, value):
-        """
-        inside the function
-        """
-        if not isinstance(value, int):
-            raise TypeError('<name> must be an integer')
-        if value <= 0:
-            raise ValueError('<name> must be greater than 0')
-
