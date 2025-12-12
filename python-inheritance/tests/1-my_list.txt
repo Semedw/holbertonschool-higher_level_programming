@@ -22,3 +22,9 @@ MyList class tests.
 >>> l = MyList()
 >>> l.print_sorted()
 []
+
+>>> l = MyList([3, 2, 1])
+>>> print(l)
+>>> l1 = l.print_sorted()
+[3, 2, 1]
+[1, 2, 3]
