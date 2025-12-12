@@ -1,5 +1,5 @@
 Test present: check instantiation
->>> from my_list import MyList
+>>> from 1- my_list import MyList
 >>> m = MyList()
 >>> isinstance(m, MyList)
 True
