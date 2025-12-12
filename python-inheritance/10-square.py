@@ -3,7 +3,7 @@
 sqaure that was inherited from rectangle
 """
 
-Rectangle = __import__("9-rectangle").Recctangle
+Rectangle = __import__("9-rectangle").Rectangle
 
 
 class Square(Rectangle):
