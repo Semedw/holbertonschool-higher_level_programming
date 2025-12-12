@@ -25,6 +25,6 @@ MyList class tests.
 
 >>> l = MyList([3, 2, 1])
 >>> print(l)
->>> l1 = l.print_sorted()
 [3, 2, 1]
+>>> l1 = l.print_sorted()
 [1, 2, 3]
