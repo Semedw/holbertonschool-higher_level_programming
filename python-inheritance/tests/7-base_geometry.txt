@@ -27,3 +27,23 @@ ValueError: width must be greater than 0
 Traceback (most recent call last):
     ...
 ValueError: height must be greater than 0
+
+# Doğru dəyər (heç bir output, səhvsiz)
+>>> bg.integer_validator("width", 5)
+
+# Səhv tip (TypeError)
+>>> bg.integer_validator("height", "5")
+Traceback (most recent call last):
+    ...
+TypeError: height must be an integer
+
+# 0 və ya mənfi dəyər (ValueError)
+>>> bg.integer_validator("width", 0)
+Traceback (most recent call last):
+    ...
+ValueError: width must be greater than 0
+
+>>> bg.integer_validator("height", -3)
+Traceback (most recent call last):
+    ...
+ValueError: height must be greater than 0
