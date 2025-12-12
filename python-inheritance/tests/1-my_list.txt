@@ -12,3 +12,9 @@ MyList class tests.
 >>> l = MyList([3, 1, 2])
 >>> print(l)
 [3, 1, 2]
+
+>>> l = MyList()
+>>> l.append(5)
+>>> l.append(1)
+>>> print(l)
+[5, 1]
