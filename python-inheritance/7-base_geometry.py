@@ -8,7 +8,7 @@ class BaseGeometry:
     """
     inside the base geometry class
     """
-    
+
     def area(self):
         """
         raises an exeption
