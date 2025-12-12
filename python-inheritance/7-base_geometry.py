@@ -9,12 +9,12 @@ class BaseGeometry:
     inside the base geometry class
     """
     
-    def area(self, width, height):
+    def area(self):
         """
         raises an exeption
         """
         #raise Exception('area() is not implemented')
-        return self.width * self.height
+        return self.__width * self.__height
 
     def integer_validator(self, name, value):
         """
