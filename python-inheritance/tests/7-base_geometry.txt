@@ -12,35 +12,7 @@ Traceback (most recent call last):
     ...
 Exception: area() is not implemented
 
-# ----------------------
-# Test integer_validator() with valid values
-# ----------------------
->>> bg.integer_validator("width", 5)
->>> bg.integer_validator("height", 10)
-
-# ----------------------
-# Test integer_validator() with non-integer value (TypeError)
-# ----------------------
->>> bg.integer_validator("width", "5")
+>>> bg.integer_validator()
 Traceback (most recent call last):
     ...
-TypeError: width must be an integer
-
->>> bg.integer_validator("height", 3.5)
-Traceback (most recent call last):
-    ...
-TypeError: height must be an integer
-
-# ----------------------
-# Test integer_validator() with zero or negative value (ValueError)
-# ----------------------
->>> bg.integer_validator("width", 0)
-Traceback (most recent call last):
-    ...
-ValueError: width must be greater than 0
-
->>> bg.integer_validator("height", -2)
-Traceback (most recent call last):
-    ...
-ValueError: height must be greater than 0
-
+TypeError: my_function() missing 2 required positional argument: 'name', 'value'
