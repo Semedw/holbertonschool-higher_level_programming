@@ -8,9 +8,6 @@ def inherits_from(obj, a_class):
     """
     Inside the function
     """
-    if isinstance(obj.__class__, a_class):
-        subcls = obj.__class__
-        if issubclass(subcls, a_class):
-            return True
+    if obj.__class__ == a_class:
         return False
-    return False
+    return issubclass(oj.__class__, a_class)
