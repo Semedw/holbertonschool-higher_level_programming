@@ -10,7 +10,7 @@ class Square(Rectangle):
     """
     inside the square
     """
-    
+
     def __init__(self, size):
         """
         inside the init method
