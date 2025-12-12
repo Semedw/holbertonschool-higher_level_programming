@@ -13,7 +13,7 @@ class BaseGeometry:
         """
         raises an exeption
         """
-        return self.__width * self.__height
+        return self.width * self.height
 
     def integer_validator(self, name, value):
         """
