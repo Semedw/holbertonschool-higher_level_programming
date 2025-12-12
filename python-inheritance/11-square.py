@@ -23,4 +23,4 @@ class Square(Rectangle):
         return self.__size ** 2
 
     def __str__(self):
-        print(f'[Square] {size}/{size}')
+        print(f'[Square] {self.__size}/{self.__size}')
