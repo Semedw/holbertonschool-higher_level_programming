@@ -13,8 +13,7 @@ class BaseGeometry:
         """
         raises an exeption
         """
-        #raise Exception('area() is not implemented')
-        return self.__width * self.__height
+        raise Exception('area() is not implemented')
 
     def integer_validator(self, name, value):
         """
