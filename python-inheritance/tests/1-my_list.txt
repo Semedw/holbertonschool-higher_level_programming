@@ -18,3 +18,7 @@ MyList class tests.
 >>> l.append(1)
 >>> print(l)
 [5, 1]
+
+>>> l = MyList()
+>>> l.print_sorted()
+[]
