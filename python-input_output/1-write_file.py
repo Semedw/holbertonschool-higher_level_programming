@@ -8,5 +8,5 @@ def write_file(filename='', text=''):
     """
     inside the function
     """
-    with open(filename, mode='r+', encoding='utf-8') as f:
+    with open(filename, mode='w', encoding='utf-8') as f:
         f.write(text)
