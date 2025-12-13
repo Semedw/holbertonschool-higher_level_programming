@@ -11,5 +11,5 @@ save = __import__('5-save_to_json_file').save_to_json_file
 load = __import__('6-load_from_json_file').load_from_json_file
 
 argv = (sys.argv[1:])
+load('add_item.json')
 save(argv, 'add_item.json')
-argv = load('add_time.json')
