@@ -5,5 +5,8 @@ append to a file
 
 
 def append_write(filename='', text=''):
+    """
+    inside the function
+    """
     with open(filename, mode='a', encoding='utf-8') as f:
         return f.write(text)
