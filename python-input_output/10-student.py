@@ -32,3 +32,4 @@ class Student:
         for key, value in d_json.items():
             if key in attrs:
                 result[key] = value
+        return result
