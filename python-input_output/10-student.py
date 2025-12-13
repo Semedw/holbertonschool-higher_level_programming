@@ -27,10 +27,8 @@ class Student:
         d_json['first_name'] = self.first_name
         d_json['last_name'] = self.last_name
         d_json['age'] = self.age
+        if attrs is None:
+            return d_json
         for key, value in d_json.items():
             if key in attrs:
                 result[key] = value
-        if attrs is None:
-            return d_json
-        else:
-            return result
