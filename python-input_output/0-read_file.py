@@ -9,5 +9,6 @@ def read_file(filename=''):
     inside the function
     """
     with open(filename, encoding='utf-8') as f:
-        for line in f:
+        read_text = f.read().replace('\t', '    ')
+        for line in read_text:
             print(line.strip())
