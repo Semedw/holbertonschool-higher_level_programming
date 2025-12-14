@@ -27,7 +27,7 @@ def pascal_triangle(n):
     inside the function
     """
     result = []
-    if n<=0:
+    if n <= 0:
         return result
     for i in range(n):
         app = []
