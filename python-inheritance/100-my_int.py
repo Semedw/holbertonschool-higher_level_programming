@@ -8,8 +8,15 @@ class MyInt(int):
     """
     inside the class
     """
-    def __init__(self, value):
+
+    def __eq__(self, other):
         """
-        inside the init method
+        inside the eq method
         """
-        self.value = value + 1
+        return super().__ne__(self, other)
+
+    def __ne__(self, other):
+        """
+        inside the ne method
+        """
+        return super().__eq__(self, other)
