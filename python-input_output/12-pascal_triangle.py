@@ -14,11 +14,13 @@ def factorial(n):
         return 1
     return n * factorial(n-1)
 
+
 def c(left, right):
     """
     inside the combination function
     """
     return factorial(left)//(factorial(right) * factorial(left-right))
+
 
 def pascal_triangle(n):
     """
