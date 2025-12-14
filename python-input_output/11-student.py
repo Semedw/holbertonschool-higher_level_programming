@@ -38,8 +38,5 @@ class Student:
         """
         inside the method
         """
-        updated_json = {}
         for key, value in json.items():
-            updated_json[key] = value
-        json = updated_json
-        return json
+            self.key = value
