@@ -10,6 +10,6 @@ class MyInt(int):
     """
     def __init__(self, value):
         """
-        inside the init
+        inside the init method
         """
         self.value = value + 1
