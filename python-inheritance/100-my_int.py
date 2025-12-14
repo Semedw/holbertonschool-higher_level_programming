@@ -13,10 +13,10 @@ class MyInt(int):
         """
         inside the eq method
         """
-        return super().__ne__(self, other)
+        return super().__ne__(other)
 
     def __ne__(self, other):
         """
         inside the ne method
         """
-        return super().__eq__(self, other)
+        return super().__eq__(other)
