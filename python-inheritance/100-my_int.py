@@ -12,4 +12,4 @@ class MyInt(int):
         """
         inside the init
         """
-        self.value = value += 1
+        self.value = value + 1
