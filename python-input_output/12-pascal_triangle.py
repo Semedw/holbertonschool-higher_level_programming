@@ -19,7 +19,7 @@ def c(left, right):
     """
     inside the combination function
     """
-    return factorial(left)//(factorial(right) * factorial(left-right))
+    return factorial(left) // (factorial(right) * factorial(left - right))
 
 
 def pascal_triangle(n):
