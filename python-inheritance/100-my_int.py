@@ -8,4 +8,8 @@ class MyInt(int):
     """
     inside the class
     """
-    pass
+    def __init__(self, value):
+        """
+        inside the init
+        """
+        self.value = value += 1
