@@ -41,4 +41,5 @@ class Student:
         updated_json = {}
         for key, value in json.items():
             updated_json[key] = value
-        return updated_json
+        json = updated_json
+        return json
