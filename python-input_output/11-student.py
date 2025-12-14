@@ -33,7 +33,7 @@ class Student:
             if key in attrs:
                 result[key] = value
         return result
-    
+
     def reload_from_json(self, json):
         """
         inside the method
