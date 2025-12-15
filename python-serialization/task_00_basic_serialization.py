@@ -18,5 +18,5 @@ def load_and_deserialize(filename):
     inside the load function
     """
     with open(filename, 'rb') as file:
-        result = pickle.load(filename)
+        result = pickle.load(file)
     return result
