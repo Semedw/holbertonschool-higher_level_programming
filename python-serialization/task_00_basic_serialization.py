@@ -13,7 +13,7 @@ def serialize_and_save_to_file(data, filename):
         try:
             pickle.dump(data, file)
         except AttributeError:
-            return None
+            raise TypeError('type error')
 
 
 def load_and_deserialize(filename):
