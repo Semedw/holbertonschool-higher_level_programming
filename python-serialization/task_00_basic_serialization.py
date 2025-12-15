@@ -18,5 +18,8 @@ def load_and_deserialize(filename):
     inside the load function
     """
     with open(filename, 'rb') as file:
-        result = pickle.load(file)
+        try:
+            result = pickle.load(file)
+        except AttributeError:
+            result = []
     return result
