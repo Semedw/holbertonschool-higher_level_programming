@@ -10,7 +10,10 @@ def serialize_and_save_to_file(data, filename):
     inside the serialize function
     """
     with open(filename, 'wb') as file:
-        pickle.dump(data, file)
+        try:
+            pickle.dump(data, file)
+        except AttributeError:
+            return None
 
 
 def load_and_deserialize(filename):
