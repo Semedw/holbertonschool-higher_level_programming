@@ -1,4 +1,4 @@
-import xml_etree.ElementTree as ET
+import xml.etree.ElementTree as ET
 
 
 def serialize_to_xml(dictionary, filename):
