@@ -3,6 +3,8 @@
 pickling custom classes
 """
 
+import pickle
+
 
 class CustomObject:
     """
