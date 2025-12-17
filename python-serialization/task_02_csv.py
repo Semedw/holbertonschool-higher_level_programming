@@ -10,7 +10,7 @@ def convert_csv_to_json(filename):
     with open(filename, mode='r', newline='', encoding='utf-8') as csvfile:
         try:
             data = list(csv.DictReader(csvfile))
-        except AssertionError:
+        except FileNotFoundError:
             return False
     with open('data.json', mode='w', encoding='utf-8') as jsonfile:
         try:
