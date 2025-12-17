@@ -17,7 +17,7 @@ class CustomObject:
         self.age = age
         self.is_student = is_student
 
-    def display(self, name, age, is_stuent):
+    def display(self):
         """
         inside the display func
         """
