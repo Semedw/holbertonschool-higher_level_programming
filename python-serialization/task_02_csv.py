@@ -8,7 +8,10 @@ import json
 
 def convert_csv_to_json(filename):
     with open(filename, mode='r', newline='', encoding='utf-8') as csvfile:
-        data = list(csv.DictReader(csvfile))
+        try:
+            data = list(csv.DictReader(csvfile))
+        except:
+            return False
     with open('data.json', mode='w', encoding='utf-8') as jsonfile:
         try:
             json.dump(data, jsonfile, indent=4)
