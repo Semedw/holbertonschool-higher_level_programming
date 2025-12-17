@@ -37,5 +37,5 @@ class CustomObject:
             try:
                 deserialized_list = pickle.load(file)
             except Exception:
-                continue
+                pass
         return deserialized_list
