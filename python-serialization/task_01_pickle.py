@@ -36,6 +36,6 @@ class CustomObject:
         with open(filename, 'rb') as file:
             try:
                 deserialized_list = pickle.load(file)
+                return deserialized_list
             except Exception:
                 pass
-        return deserialized_list
