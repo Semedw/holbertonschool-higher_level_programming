@@ -34,5 +34,8 @@ class CustomObject:
     @classmethod
     def deserialize(cls, filename):
         with open(filename, 'rb') as file:
-            deserialized_list = pickle.load(file)
+            try:
+                deserialized_list = pickle.load(file)
+            except Exception:
+                continue
         return deserialized_list
