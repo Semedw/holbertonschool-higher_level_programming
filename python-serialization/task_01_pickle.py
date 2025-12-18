@@ -3,6 +3,8 @@
 pickling custom classes
 """
 
+import pickle
+
 
 class CustomObject:
     """
@@ -17,7 +19,7 @@ class CustomObject:
         self.age = age
         self.is_student = is_student
 
-    def display(self, name, age, is_stuent):
+    def display(self):
         """
         inside the display func
         """
@@ -32,5 +34,8 @@ class CustomObject:
     @classmethod
     def deserialize(cls, filename):
         with open(filename, 'rb') as file:
-            deserialized_list = pickle.load(file)
-        return deserialized_list
+            try:
+                deserialized_list = pickle.load(file)
+                return deserialized_list
+            except Exception:
+                pass
