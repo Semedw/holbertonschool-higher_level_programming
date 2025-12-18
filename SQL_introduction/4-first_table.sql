@@ -1,4 +1,5 @@
 -- create first_table
-CREATE TABLE IF NOT EXISTS first_table(
+CREATE TABLE IF NOT EXISTS first_table (
 	'id' int,
-	'name' varchar(256));
+	'name' varchar(256)
+);
