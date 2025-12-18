@@ -1,2 +1,2 @@
 -- deleting db
-DELETE hbtn_0c_c;
+DROP DATABASE hbtn_0c_c;
