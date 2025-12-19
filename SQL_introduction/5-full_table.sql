@@ -1,2 +1,4 @@
 -- full table
-SELECT * FROM first_table;
+SELECT * 
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME='firts_table';
