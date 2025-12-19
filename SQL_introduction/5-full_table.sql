@@ -1,4 +1,2 @@
 -- full table
-SELECT * 
-FROM INFORMATION_SCHEMA.COLUMNS
-WHERE TABLE_NAME='firts_table';
+SHOW CREATE TABLE first_table;
