@@ -1,5 +1,5 @@
 -- cities of california
 SELECT *
 FROM cities
-WHERE name = 'California'
+WHERE state_id = 1
 ORDER BY id ASC;
