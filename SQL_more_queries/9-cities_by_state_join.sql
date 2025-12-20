@@ -1,4 +1,5 @@
 -- cities by states
-SELECT id, name
+SELECT cities.id, cities.name, states.name
 FROM cities
-	NATURAL JOIN states;
+JOIN states on cities.state_id = states.id
+ORDER BY cities.id ASC;
